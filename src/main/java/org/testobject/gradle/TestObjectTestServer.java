@@ -34,7 +34,7 @@ public class TestObjectTestServer extends TestServer {
 	@Override
 	public void uploadApks(@NonNull String variantName, @NonNull File testApk, @Nullable File appAk) {
 		String baseUrl = extension.getBaseUrl();
-		logger.info(String.format("using baseUrl '%s'", baseUrl));
+		logger.info(String.format("using baseUrl : '%s'", baseUrl));
 
 		TestObjectClient client = TestObjectClient.Factory.create(baseUrl, getProxySettings());
 
